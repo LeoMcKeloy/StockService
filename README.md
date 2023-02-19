@@ -2,7 +2,7 @@
 
 Сервис для получения информации по ценным бумагам с [Московской биржи](https://www.moex.com/ru/bondization/issuer) и [Tinkoff Invest API](https://www.tinkoff.ru/invest/open-api/).
 
-Данный сервис предоставляет единый интефейс для взаимодействия с MoexService и TinkoffService.
+Данный сервис предоставляет единый интефейс для взаимодействия с [MoexService](https://github.com/LeoMcKeloy/MoexService) и [TinkoffService](https://github.com/LeoMcKeloy/TinkoffService).
 
 ## Запуск на локальной машине
 

@@ -1,0 +1,12 @@
+server:
+    port: 8002
+
+api:
+    moexservice:
+        url: http://localhost:8003/api
+        getStocks: /bonds
+        getPrices: /prices
+    tinkoffservice:
+        url: http://localhost:8004/api
+        getStocks: /stocks
+        getPrices: /prices

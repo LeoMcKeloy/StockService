@@ -10,3 +10,9 @@ api:
         url: http://localhost:8004/api
         getStocks: /stocks
         getPrices: /prices
+
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/tinkoff
+        username: tinkoff
+        password: tinkoff

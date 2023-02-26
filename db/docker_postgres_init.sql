@@ -16,8 +16,8 @@ create table if not exists roles_users (
 );
 
 insert into users (user_name, password) values
-                                               ('admin', 'admin'),
-                                               ('user', 'user');
+                                               ('admin', '$2a$12$i5Xla.G0uVn/lTgcM4qNKOmRBD/ThYVFDXWJwpPv3S2OJH2OvP.li'),
+                                               ('user', '$2a$12$XtLWLJh6idO8.cj91dLDFOEwflpEmDS25IY47mVBtEXJkwZrXLVT6');
 
 insert into roles (name) values
                                             ('ROLE_ADMIN'),

@@ -5,16 +5,24 @@
 Данный сервис предоставляет единый интефейс для взаимодействия с [MoexService](https://github.com/LeoMcKeloy/MoexService) и [TinkoffService](https://github.com/LeoMcKeloy/TinkoffService).
 Необходимо развернуть оба сервиса для работы со StockService.
 
-## Запуск на локальной машине
+## Создание docker-образа
 
 Для запуска потребуется установленный Docker for Desktop.
 Dockerfile для создания образа и запуска контейнера сервиса находится в корне.
 
-### build image
->docker build -t stock .
+>docker build . -t stock:0.0.1
 
-### run container
+## Запуск изолированного микросервиса в контейнере
+
 >docker run -p 8002:8002 --name stock-service -t stock
+
+## Запуск всех микросервисов и базы пользователей для аутентификации в контейнерах с помощью docker-compose
+
+Перейти в папку db
+>cd db
+
+Запустить команду в терминале
+>docker-compose up
 
 ## Доступ к OpenAPI
 

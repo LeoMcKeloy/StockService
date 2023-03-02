@@ -1,6 +1,18 @@
 version: '3.8'
 
 services:
+  stock:
+    build: C:\Users\lpyryanov\IdeaProjects\StockService
+    ports:
+      - "8002:8002"
+  tinkoff:
+    build: C:\Users\lpyryanov\IdeaProjects\TinkoffService
+    ports:
+      - "8004:8004"
+  moex:
+    build:  C:\Users\lpyryanov\IdeaProjects\MoexService
+    ports:
+      - "8003:8003"
   postgres:
     image: postgres:latest
     environment:
